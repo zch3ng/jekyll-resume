@@ -1,19 +1,35 @@
-<h3 class="section-title">Experience</h3>
-<dl class="experience">
-    {% for job in site.data.jobs %}
+<h3 class="section-title">research experience</h3>
+<dl class="research experience">
+    {% for job in site.data.job1 %}
         <dt>
             <p class="title">{{ job.title }}</p>
             <p class="company">{{ job.company }}</p>
             <p class="period">{{ job.period }}</p>
         </dt><!--
         --><dd>
-            <p>{{ job.description }}</p>
+            <p><a href="ai2018.pdf"  style="background:none;text-decoration:none  hover="text-decoration:black">{{ job.description }}</a></p>
         </dd>
     {% endfor %}
 </dl>
 
-<h3 class="section-title">Education</h3>
-<dl class="education">
+
+
+{% for job in site.data.job2 %}
+        <dt>
+            <p class="title">{{ job.title }}</p>
+            <p class="company">{{ job.company }}</p>
+            <p class="period">{{ job.period }}</p>
+        </dt><!--
+        --><dd>
+            <p><a href="qi2017.pdf"  style="background:none;text-decoration:none  hover="text-decoration:black">{{ job.description }}</a></p>
+        </dd>
+    {% endfor %}
+</dl>
+
+
+
+<h3 class="section-title">organization experience</h3>
+<dl class="organization experience">
     {% for qualification in site.data.education %}
         <dt>
             <p class="title">{{ qualification.qualification }}</p>
@@ -25,3 +41,5 @@
         </dd>
     {% endfor %}
 </dl>
+
+
