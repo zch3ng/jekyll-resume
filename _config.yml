@@ -19,3 +19,5 @@ email_address: a541235117@163.com
 # Build settings
 markdown: kramdown
 
+
+theme: jekyll-theme-cayman
